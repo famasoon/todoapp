@@ -11,7 +11,7 @@ async function bootstrap() {
   app.enableCors({
     credentials: true,
     origin: ['http://localhost:3000'],
-  })
+  });
   app.use(cookieParser());
   app.use(csurf({ cookie: true }));
   await app.listen(3005);
